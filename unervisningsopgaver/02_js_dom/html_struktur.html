@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    header, footer{
+border: 1px solid black;
+text-align: center;
+font-size: 2rem;
+}
+.flex_section{
+display: flex;
+gap: 20px;
+}
+article{
+border: 1px solid black;
+}
+img{
+width: 100%;
+}
+
+body{
+margin: 0;
+}
+main{
+margin: 70px;
+}
+@media (max-width: 700px) {
+.flex_section{
+    display: block;
+}
+main{
+    margin: 20px;
+}
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <p>Titel</p>
+    </header>
+    <main>
+        <section >
+            <h1>Undertitel</h1>
+                <div class="flex_section">
+            <article>
+<img src="https://placeimg.com/640/480/animals" alt="pic1">
+<h2>Article 1</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic temporibus, fuga doloremque ad totam quae possimus sunt saepe iure praesentium repellat rerum quos officia sit consequatur nihil, voluptates dolorem!</p>
+            </article>
+            <article>
+                <img src="https://placeimg.com/640/480/animals" alt="pic1">
+                <h2>Article 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic temporibus, fuga doloremque ad totam quae possimus sunt saepe iure praesentium repellat rerum quos officia sit consequatur nihil, voluptates dolorem!</p>
+            </article>
+        </div>
+        </section>
+    </main>
+        <footer>
+This is the footer
+        </footer>
+    
+</body>
+</html>
