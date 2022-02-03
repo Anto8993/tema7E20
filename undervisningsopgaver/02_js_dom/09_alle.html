@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A</title>
+    <style>
+        .typo {
+            font-family: monospace;
+            color: darkblue;
+            line-height: 150%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <button onclick="reset()">Reset</button>
+    <h3>En</h3>
+    <p>Gochujang blue bottle iPhone quinoa, umami lumbersexual semiotics disrupt coloring book squid. Tilde banjo flannel PBR&B umami vape plaid occupy prism lumbersexual man braid. </p>
+    <h3>Lille</h3>
+    <p>Fam before they sold out edison bulb, la croix sartorial cray poke yuccie copper mug ugh. Kickstarter yr tumblr synth.</p>
+    <h3>Bitte</h3>
+    <p>Selvage authentic heirloom put a bird on it umami sustainable bitters meh bicycle rights kombucha af squid. DIY air plant drinking vinegar XOXO raw denim ethical semiotics. </p>
+    <h3>Smule</h3>
+    <p>Roof party tumeric next level etsy church-key plaid. Fashion axe deep v tumeric kickstarter tofu narwhal direct trade. Hexagon gentrify pitchfork ethical echo park. </p>
+    <h3>Tekst</h3>
+    <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+
+
+    <script>
+
+const p_1 = document.querySelector("p:nth-child(3)");
+const p_2 = document.querySelector("p:nth-child(5)");
+const p_3 = document.querySelector("p:nth-child(7)");
+const p_4 = document.querySelector("p:nth-child(9)");
+const p_5 = document.querySelector("p:nth-child(11)");
+const but = document.querySelector("button")
+
+
+
+   document.addEventListener("DOMContentLoaded", start);
+        function start(){
+            console.log("start");
+            p_1.addEventListener("click", clicked);
+            p_2.addEventListener("click", clicked);
+            p_3.addEventListener("click", clicked);
+            p_4.addEventListener("click", clicked);
+            p_5.addEventListener("click", clicked);
+
+            function clicked(){
+                console.log("clicked");
+                this.classList.add("typo");
+            }
+        }
+
+        function reset(){
+                console.log("reset")
+                p_1.classList.remove("typo")
+                p_2.classList.remove("typo")
+                p_3.classList.remove("typo")
+                p_4.classList.remove("typo")
+                p_5.classList.remove("typo")
+            }
+
+    </script>
+</body>
+
+</html>
