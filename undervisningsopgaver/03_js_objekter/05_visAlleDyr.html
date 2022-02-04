@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="liste"></section>
+    <script>
+        const dyr = [
+            {
+            "navn":"Gris",
+            "type":"Pattedyr", 
+            "levested":"Svinefarme",
+            "billede":"http://mabe-kea.dk/E19/pics/pig.png"
+        },
+        {
+            "navn":"Frø",
+            "type":"Padde", 
+            "levested":"Sø",
+            "billede":"http://mabe-kea.dk/E19/pics/frog.png"
+        },
+        {
+            "navn":"Ræv",
+            "type":"Pattedyr", 
+            "levested":"Skov",
+            "billede":"http://mabe-kea.dk/E19/pics/fox.png"
+        },
+        {
+            "navn":"Sild",
+            "type":"Fisk", 
+            "levested":"Havet",
+            "billede":"http://mabe-kea.dk/E19/pics/sild.png"
+        },
+        {
+            "navn":"Krokodille",
+            "type":"Krybdyr", 
+            "levested":"Sump",
+            "billede":"http://mabe-kea.dk/E19/pics/kroko.png"
+        }
+    ];
+
+
+        document.addEventListener("DOMContentLoaded", start);
+        function start(){
+        // console.log(`Dyr:${dyr.navn}, Type:${dyr.type}, Billede:${dyr.billede}, Levested:${dyr.levested}`)
+        console.log(dyr)
+        const listevisning = document.querySelector("#liste");
+        dyr.forEach(elm => {
+            listevisning.innerHTML += `<p>${elm.navn}, ${elm.type}, fra ${elm.levested}</p>`;
+        }
+        )
+        }
+
+        // const destination = document.querySelector("article");
+        // const p = document.createElement("p");
+        // p.textContent = `Dyr:${dyr.navn}, Type:${dyr.type}, Levested:${dyr.levested}`;
+        // destination.appendChild(p);
+
+        // const img = document.createElement("img");
+        // img.src = `${dyr.billede}`;
+        // destination.appendChild(img)
+
+
+    </script>
+</body>
+</html>

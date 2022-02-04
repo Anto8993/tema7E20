@@ -9,25 +9,56 @@
 <body>
     <article></article>
     <script>
-        const dyr = {
+        const dyr = [
+            {
             "navn":"Gris",
             "type":"Pattedyr", 
-            "billede":"http://mabe-kea.dk/E19/pics/pig.png", 
-            "levested":"Svinefarme"
+            "levested":"Svinefarme",
+            "billede":"http://mabe-kea.dk/E19/pics/pig.png"
+        },
+        {
+            "navn":"Frø",
+            "type":"Padde", 
+            "levested":"Sø",
+            "billede":"http://mabe-kea.dk/E19/pics/frog.png"
+        },
+        {
+            "navn":"Ræv",
+            "type":"Pattedyr", 
+            "levested":"Skov",
+            "billede":"http://mabe-kea.dk/E19/pics/fox.png"
+        },
+        {
+            "navn":"Sild",
+            "type":"Fisk", 
+            "levested":"Havet",
+            "billede":"http://mabe-kea.dk/E19/pics/sild.png"
+        },
+        {
+            "navn":"Krokodille",
+            "type":"Krybdyr", 
+            "levested":"Sump",
+            "billede":"http://mabe-kea.dk/E19/pics/kroko.png"
         }
+    ];
+
+
+
+
         document.addEventListener("DOMContentLoaded", start);
         function start(){
-        console.log(`Dyr:${dyr.navn}, Type:${dyr.type}, Billede:${dyr.billede}, Levested:${dyr.levested}`)
-        }
+        // console.log(`Dyr:${dyr.navn}, Type:${dyr.type}, Billede:${dyr.billede}, Levested:${dyr.levested}`)
+    console.log(dyr)   
+    }
 
-        const destination = document.querySelector("article");
-        const p = document.createElement("p");
-        p.textContent = `Dyr:${dyr.navn}, Type:${dyr.type}, Levested:${dyr.levested}`;
-        destination.appendChild(p);
+        // const destination = document.querySelector("article");
+        // const p = document.createElement("p");
+        // p.textContent = `Dyr:${dyr.navn}, Type:${dyr.type}, Levested:${dyr.levested}`;
+        // destination.appendChild(p);
 
-        const img = document.createElement("img");
-        img.src = `${dyr.billede}`;
-        destination.appendChild(img)
+        // const img = document.createElement("img");
+        // img.src = `${dyr.billede}`;
+        // destination.appendChild(img)
 
 
     </script>
